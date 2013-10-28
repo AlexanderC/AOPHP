@@ -30,9 +30,9 @@ class DocBlockTest
     /**
      * Test DocBlock parser
      *
-     * @AOP/before(DocBlockTest.doAnotherThings)
+     * @AOP/before (DocBlockTest.doAnotherThings   )
      * @param array $parameters
-     * @AOP/after(DocBlockTest.*)
+     * @AOP/after (  DocBlockTest .* )
      */
     protected function testBlockAfter(array $parameters)
     {

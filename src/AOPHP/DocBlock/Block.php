@@ -13,7 +13,7 @@ class Block
     /**
      * Regular expression DocBlock to be matched to
      */
-    const REGEXP = "~(?:\s*\*\s*@aop/((?:before|after)[^\n\*]*)\s*\n)~umi";
+    const REGEXP = "~(?:\s*\*\s*@aop/((?:before|after)[^\n]*)\s*\n)~umi";
 
     /**
      * @var string

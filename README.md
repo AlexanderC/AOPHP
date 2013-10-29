@@ -3,8 +3,11 @@ AOPHP
 
 AOPHP- AOP for PHP
 
-=== Examples ===
+Examples
+--------
 
-=== License ===
+License
+-------
+
 GNU GPLv2.
 Copyright (c) 2013 AlexanderC <self@alexanderc.me>

@@ -28,7 +28,7 @@
       <file leaf-file-name="bootstrap.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="0" column="0" selection-start="0" selection-end="451" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="345">
               <folding>
                 <element signature="e#6#91#0" expanded="true" />
               </folding>
@@ -68,7 +68,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="67" selection-end="67" vertical-scroll-proportion="0.24064171" vertical-offset="0" max-vertical-offset="561">
+            <state line="26" column="3" selection-start="546" selection-end="546" vertical-scroll-proportion="0.69518715" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -400,15 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
-          <folding>
-            <element signature="e#6#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/DocBlockTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="50" selection-start="569" selection-end="569" vertical-scroll-proportion="-5.0" vertical-offset="270" max-vertical-offset="780">
@@ -440,9 +431,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="537">
+          <folding>
+            <element signature="e#6#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="67" selection-end="67" vertical-scroll-proportion="0.24064171" vertical-offset="0" max-vertical-offset="561">
+        <state line="26" column="3" selection-start="546" selection-end="546" vertical-scroll-proportion="0.69518715" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>

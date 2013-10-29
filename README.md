@@ -34,7 +34,7 @@ Main Sugar
 
 - No dependencies
 
-- Fast due to built in cache if a couple of ready to use drivers
+- Fast due to built in cache with a couple of ready to use drivers
 
 - Automated cache invalidation
 

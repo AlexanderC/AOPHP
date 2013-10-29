@@ -10,23 +10,28 @@ Examples
 
 ```php
 <?php
-   /**
-    * @author AlexanderC <self@alexanderc.me>
-    * @date 10/28/13
-    * @time 8:24 PM
-    */
+/**
+ * @author AlexanderC <self@alexanderc.me>
+ * @date 10/28/13
+ * @time 8:24 PM
+ */
 
-   require __DIR__ . '/../autoload.php';
+require __DIR__ . '/../autoload.php';
 
-   $AOPHP = \AOPHP\AOPHP::crete();
+$AOPHP = \AOPHP\AOPHP::crete();
 
-   $object = new DocBlockTest();
+// see DocBlockTest to understand lib usage
+$object = new DocBlockTest();
 
-   $AOPHP->addTarget($AOPHP->createTarget($object));
-   $AOPHP->addAspect($AOPHP->createAspect(clone $object));
+// add target object (methods called on this)
+$AOPHP->addTarget($AOPHP->createTarget($object));
+// add aspect object (advices would be applied before and after calling a target)
+$AOPHP->addAspect($AOPHP->createAspect(clone $object));
 
-   $AOPHP->advice($object, 'doThings', ['"Lorem Ipsum dolor sit amet"']);
-   $AOPHP->advice($object, 'doAnotherThings', ['"Lorem Ipsum dolor sit amet"']);
+// call target method
+$AOPHP->advice($object, 'doThings', ['"Lorem Ipsum dolor sit amet"']);
+// call another target method
+$AOPHP->advice($object, 'doAnotherThings', ['"Lorem Ipsum dolor sit amet"']);
 ```
 
 License

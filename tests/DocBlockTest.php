@@ -28,7 +28,12 @@ class DocBlockTest
     }
 
     /**
-     * Test this method for the cache invalidating
+     * This is an aspect.
+     * Once you change this DockBlock the cache is invalidated.
+     * You can subscribe for more advices.
+     * (*) Asterix ==> means any (class or method)
+     * before|after ==> when advice to be applied
+     * (DocBlockTest . doThings) ==> is join point ("class . method") advice to be applied to
      *
      * @param \AOPHP\DocBlock\Advice $advice
      * @param array $parameters

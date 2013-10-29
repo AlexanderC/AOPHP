@@ -102,7 +102,13 @@ class AOPHP
         }
 
         if(!$skipExecution) {
-            $result = call_user_func_array([$targetObject, $method], $parameters);
+            $traits = class_uses($targetObject);
+
+            if(array_key_exists('AOPHP\Traits\AOP', $traits)) {
+                $result = call_user_func_array([$targetObject, '__aopCallInternal'], [$method, $parameters]);
+            } else {
+                $result = call_user_func_array([$targetObject, $method], $parameters);
+            }
 
             /** @var $pointcut PointCut */
             foreach($pointcuts as $pointcut) {

@@ -13,11 +13,13 @@ $AOPHP = \AOPHP\AOPHP::crete();
 $object = new DocBlockTest();
 
 // add target object (methods called on this)
-$AOPHP->addTarget($AOPHP->createTarget($object));
+//$AOPHP->addTarget($AOPHP->createTarget($object));
 // add aspect object (advices would be applied before and after calling a target)
-$AOPHP->addAspect($AOPHP->createAspect(clone $object));
+//$AOPHP->addAspect($AOPHP->createAspect(clone $object));
 
 // call target method
-$AOPHP->advice($object, 'doThings', ['"Lorem Ipsum dolor sit amet"']);
+//$AOPHP->advice($object, 'doThings', ['"Lorem Ipsum dolor sit amet"']);
 // call another target method
-$AOPHP->advice($object, 'doAnotherThings', ['"Lorem Ipsum dolor sit amet"']);
+//$AOPHP->advice($object, 'doAnotherThings', ['"Lorem Ipsum dolor sit amet"']);
+
+$object->doThings("Lorem Ipsum dolor sit amet");

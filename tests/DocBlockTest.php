@@ -5,13 +5,20 @@
  * @time 8:32 PM
  */
 
-class DocBlockTest
+class DocBlockTest implements \AOPHP\Helpers\AOPConst
 {
+    use \AOPHP\Traits\AOP;
+
+    public function __construct()
+    {
+        $this->initAOP(\AOPHP\AOPHP::crete());
+    }
+
     /**
      * @param string $text
      * @return string
      */
-    public function doThings($text)
+    protected function doThings($text)
     {
         echo "Do text things is ", $text, "\n";
         return 'blablashow';
@@ -21,7 +28,7 @@ class DocBlockTest
      * @param string $text
      * @return string
      */
-    public function doAnotherThings($text)
+    protected function doAnotherThings($text)
     {
         echo "Do text another things is ", $text, "\n";
         return 'blablashow';

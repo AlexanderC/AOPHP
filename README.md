@@ -3,6 +3,30 @@ AOPHP
 
 AOPHP- AOP for PHP
 
+Main Sugar
+----------
+
+Annotations are used as main config provider:
+    @AOP/before(Class.Method)
+    @AOP/after(Class.Method)
+
+Use PHP magic to provide a natural way to do the things:
+    $class->method('something')
+    // instead of
+    $AOPHP->advice($class, 'method', ['something']);
+
+Tolerant parser:
+    @AOP  / BeFOrE  (  Class . Method)
+    @aoP    /  AFTeR    ( Class .  Method)
+
+Flexible PointCut:
+    @AOP/before(Class . *)
+    @AOP/after(* . Method)
+
+No dependencies
+
+Fast due to built in cache if a couple of ready to use drivers
+
 Examples
 --------
 

@@ -11,10 +11,15 @@ class DocBlockTest implements \AOPHP\Helpers\AOPConst
 
     public function __construct()
     {
+        // this is required.
+        // You can also provider another instance of AOPHP
+        // provided to the constructor manually or by DI service
         $this->initAOP(\AOPHP\AOPHP::crete());
     }
 
     /**
+     * NOTE: to be able to make this AOP target set protected/private key
+     *
      * @param string $text
      * @return string
      */
@@ -25,6 +30,8 @@ class DocBlockTest implements \AOPHP\Helpers\AOPConst
     }
 
     /**
+     * NOTE: to be able to make this AOP target set protected/private key
+     *
      * @param string $text
      * @return string
      */
@@ -46,8 +53,8 @@ class DocBlockTest implements \AOPHP\Helpers\AOPConst
      * @param array $parameters
      * @param null|mixed $result
      *
-     * @AOP/before(DocBlockTest . doThings)
-     * @AOP/before(* . doAnotherThings)
+     * @AOP  / before  (DocBlockTest . doThings)
+     * @AOP    /  before    (* . doAnotherThings)
      * @AOP/after(DocBlockTest . *)
      */
     public function testBlockAfter(\AOPHP\DocBlock\Advice $advice, array & $parameters, $result = null)
@@ -59,5 +66,14 @@ class DocBlockTest implements \AOPHP\Helpers\AOPConst
 
     // Some example of method without docBlock
     protected function withoutAnyDocBlock()
+    {   }
+
+    /**
+     * This would be your magic __call method up to now
+     *
+     * @param string $method
+     * @param array $arguments
+     */
+    protected function __onCall($method, array $arguments)
     {   }
 }

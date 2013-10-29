@@ -5,6 +5,9 @@ AOPHP- AOP for PHP
 
 Examples
 --------
+
+    For detailed examples see tests/bootstrap.php
+
 ```php
 <?php
    /**

@@ -56,19 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parser.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Parser.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AOPHP/DocBlock/Parser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="5" selection-start="1699" selection-end="1699" vertical-scroll-proportion="-6.75" vertical-offset="903" max-vertical-offset="1440">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="80" selection-start="545" selection-end="545" vertical-scroll-proportion="0.6684492" vertical-offset="0" max-vertical-offset="585">
+            <state line="75" column="5" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.30167598" vertical-offset="903" max-vertical-offset="1440">
               <folding />
             </state>
           </provider>
@@ -414,13 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AOPHP/DocBlock/Parser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="5" selection-start="1699" selection-end="1699" vertical-scroll-proportion="-6.75" vertical-offset="903" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state line="277" column="28" selection-start="15167" selection-end="15167" vertical-scroll-proportion="7.780899" vertical-offset="0" max-vertical-offset="4245">
@@ -442,7 +426,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="80" selection-start="545" selection-end="545" vertical-scroll-proportion="0.6684492" vertical-offset="0" max-vertical-offset="585">
+        <state line="8" column="49" selection-start="101" selection-end="101" vertical-scroll-proportion="0.21390374" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AOPHP/DocBlock/Parser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="5" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.30167598" vertical-offset="903" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>

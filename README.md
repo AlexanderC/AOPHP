@@ -3,6 +3,11 @@ AOPHP
 
 AOPHP- AOP for PHP
 
+Requirements
+------------
+
+PHP 5.4<
+
 Main Sugar
 ----------
 

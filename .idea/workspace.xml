@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbda6f0a-eb39-494a-91d2-dd001d6d53e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AOPHP/DocBlock/Block.php" afterPath="$PROJECT_DIR$/src/AOPHP/DocBlock/Block.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DocBlockTest.php" afterPath="$PROJECT_DIR$/tests/DocBlockTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="AOPHP.iws" />
@@ -50,7 +48,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="62" selection-start="576" selection-end="576" vertical-scroll-proportion="0.91525424" vertical-offset="81" max-vertical-offset="1095">
+            <state line="32" column="4" selection-start="482" selection-end="482" vertical-scroll-proportion="0.7457627" vertical-offset="216" max-vertical-offset="1230">
               <folding />
             </state>
           </provider>
@@ -491,7 +489,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="62" selection-start="576" selection-end="576" vertical-scroll-proportion="0.91525424" vertical-offset="81" max-vertical-offset="1095">
+        <state line="32" column="4" selection-start="482" selection-end="482" vertical-scroll-proportion="0.7457627" vertical-offset="216" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>

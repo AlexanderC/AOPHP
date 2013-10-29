@@ -8,24 +8,24 @@ Main Sugar
 
 - Annotations are used as main config provider:
 
-    @AOP/before(Class.Method)
-    @AOP/after(Class.Method)
+        @AOP/before(Class.Method)
+        @AOP/after(Class.Method)
 
 - Use PHP magic to provide a natural way to do the things:
 
-    $class->method('something')
-    // instead of
-    $AOPHP->advice($class, 'method', ['something']);
+        $class->method('something')
+        // instead of
+        $AOPHP->advice($class, 'method', ['something']);
 
 - Tolerant parser:
 
-    @AOP  / BeFOrE  (  Class . Method)
-    @aoP    /  AFTeR    ( Class .  Method)
+        @AOP  / BeFOrE  (  Class . Method)
+        @aoP    /  AFTeR    ( Class .  Method)
 
 - Flexible PointCut:
 
-    @AOP/before(Class . *)
-    @AOP/after(* . Method)
+        @AOP/before(Class . *)
+        @AOP/after(* . Method)
 
 - No dependencies
 

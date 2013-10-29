@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbda6f0a-eb39-494a-91d2-dd001d6d53e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AOPHP/Traits/AOP.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AOPHP/Helpers/AOPConst.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AOPHP/Cache/MemcacheDriver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AOPHP/Cache/MemcachedDriver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AOPHP/AOPHP.php" afterPath="$PROJECT_DIR$/src/AOPHP/AOPHP.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DocBlockTest.php" afterPath="$PROJECT_DIR$/tests/DocBlockTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/bootstrap.php" afterPath="$PROJECT_DIR$/tests/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="AOPHP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DocBlockTest.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/DocBlockTest.php">
+      <file leaf-file-name="bootstrap.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="46" selection-start="263" selection-end="263" vertical-scroll-proportion="0.21787709" vertical-offset="18" max-vertical-offset="960">
+            <state line="12" column="29" selection-start="0" selection-end="733" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="450">
+              <folding>
+                <element signature="e#6#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="48" selection-start="843" selection-end="843" vertical-scroll-proportion="0.6791444" vertical-offset="144" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -65,7 +69,6 @@
         <option value="$PROJECT_DIR$/src/AOPHP/PointCut.php" />
         <option value="$PROJECT_DIR$/src/AOPHP/Cache/FileSystemDriver.php" />
         <option value="$PROJECT_DIR$/src/AOPHP/DocBlock/Parser.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/AOPHP/Traits/Target.php" />
         <option value="$PROJECT_DIR$/src/AOPHP/Helpers/AOPConst.php" />
         <option value="$PROJECT_DIR$/tests/bootstrap.php" />
@@ -75,6 +78,7 @@
         <option value="$PROJECT_DIR$/src/AOPHP/Cache/MemcacheDriver.php" />
         <option value="$PROJECT_DIR$/src/AOPHP/Cache/MemcachedDriver.php" />
         <option value="$PROJECT_DIR$/tests/DocBlockTest.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -401,13 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="77" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AOPHP/PointCut.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="40" selection-start="3025" selection-end="3025" vertical-scroll-proportion="0.57272726" vertical-offset="1881" max-vertical-offset="2295">
@@ -442,15 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="238" selection-end="238" vertical-scroll-proportion="0.33519554" vertical-offset="0" max-vertical-offset="537">
-          <folding>
-            <element signature="e#6#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AOPHP/Cache/MemcachedDriver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="50" selection-start="894" selection-end="894" vertical-scroll-proportion="1.3128492" vertical-offset="0" max-vertical-offset="1260">
@@ -477,6 +465,22 @@
     <entry file="file://$PROJECT_DIR$/tests/DocBlockTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="46" selection-start="263" selection-end="263" vertical-scroll-proportion="0.21787709" vertical-offset="18" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="29" selection-start="0" selection-end="733" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="450">
+          <folding>
+            <element signature="e#6#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="48" selection-start="843" selection-end="843" vertical-scroll-proportion="0.6791444" vertical-offset="144" max-vertical-offset="735">
           <folding />
         </state>
       </provider>

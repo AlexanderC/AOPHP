@@ -36,6 +36,8 @@ Main Sugar
 
 - Fast due to built in cache if a couple of ready to use drivers
 
+- Automated cache invalidation
+
 Examples
 --------
 

@@ -5,8 +5,8 @@ AOPHP- AOP for PHP
 
 Examples
 --------
-
-   <?php
+```php
+<?php
    /**
     * @author AlexanderC <self@alexanderc.me>
     * @date 10/28/13
@@ -24,7 +24,7 @@ Examples
 
    $AOPHP->advice($object, 'doThings', ['"Lorem Ipsum dolor sit amet"']);
    $AOPHP->advice($object, 'doAnotherThings', ['"Lorem Ipsum dolor sit amet"']);
-   
+```
 
 License
 -------

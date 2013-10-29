@@ -14,5 +14,5 @@ $object = new DocBlockTest();
 $AOPHP->addTarget($AOPHP->createTarget($object));
 $AOPHP->addAspect($AOPHP->createAspect(clone $object));
 
-//$AOPHP->advice($object, 'doThings', ['"Lorem Ipsum dolor sit amet"']);
+$AOPHP->advice($object, 'doThings', ['"Lorem Ipsum dolor sit amet"']);
 $AOPHP->advice($object, 'doAnotherThings', ['"Lorem Ipsum dolor sit amet"']);

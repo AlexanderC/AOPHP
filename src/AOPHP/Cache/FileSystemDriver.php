@@ -52,7 +52,7 @@ class FileSystemDriver implements IDriver
     {
         $file = $this->getFile($block->getClass(), $block->getMethod());
 
-        //return file_put_contents($file, @serialize($block), LOCK_EX | LOCK_NB);
+        return file_put_contents($file, @serialize($block), LOCK_EX | LOCK_NB);
     }
 
     /**

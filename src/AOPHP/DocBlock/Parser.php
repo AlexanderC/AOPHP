@@ -35,11 +35,11 @@ class Parser
 
         $blocks = [];
 
-        foreach($reflection->getMethods(\ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+        foreach($reflection->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
             $block = $this->parseMethod($method);
 
             if($block instanceof Block) {
-                $blocks = $block;
+                $blocks[] = $block;
             }
         }
 
@@ -85,7 +85,7 @@ class Parser
     {
         $block = new Block($method->getDeclaringClass()->getName(), $method->getName(), $docBlock, $signature);
 
-        if(!$block->isAspect()) {
+        if(!$block->isAdvice()) {
             return false;
         }
 

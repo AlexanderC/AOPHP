@@ -8,7 +8,7 @@
 namespace AOPHP\DocBlock;
 
 /**
- * Class Aspect
+ * Class Advice
  * @package AOPHP\DocBlock
  *
  * @example:
@@ -19,7 +19,7 @@ namespace AOPHP\DocBlock;
  *      ...(class.*)
  *      ...(*.method)
  */
-class Aspect
+class Advice
 {
     /**
      * Regexp applied to aspect info string
@@ -47,19 +47,32 @@ class Aspect
     protected $method;
 
     /**
+     * @var Block
+     */
+    protected $block;
+
+    /**
+     * @var string
+     */
+    protected $rawAspect;
+
+    /**
      * @param string $rawAspect
+     * @param Block $block
      * @throws \InvalidArgumentException
      */
-    public function __construct($rawAspect)
+    public function __construct($rawAspect, Block $block)
     {
         if(!preg_match(self::REGEXP, $rawAspect, $matches)
             || !isset($matches['type'], $matches['class'], $matches['method'])) {
             throw new \InvalidArgumentException("Unable to parse aspect string");
         }
 
+        $this->block = $block;
         $this->type = strtolower($matches['type']);
         $this->class = $matches['class'];
         $this->method = $matches['method'];
+        $this->rawAspect = (string) $rawAspect;
     }
 
     /**
@@ -85,4 +98,20 @@ class Aspect
     {
         return $this->class;
     }
-} 
+
+    /**
+     * @return \AOPHP\DocBlock\Block
+     */
+    public function getBlock()
+    {
+        return $this->block;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRawAspect()
+    {
+        return $this->rawAspect;
+    }
+}

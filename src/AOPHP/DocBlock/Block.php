@@ -38,12 +38,12 @@ class Block
     /**
      * @var bool
      */
-    protected $isAspect = false;
+    protected $isAdvice = false;
 
     /**
      * @var array
      */
-    protected $aspects = [];
+    protected $advices = [];
 
     /**
      * @param string $class
@@ -58,29 +58,29 @@ class Block
         $this->rawBlock = (string) $rawBlock;
         $this->signature = (string) $signature;
 
-        $this->parseAspects();
+        $this->parseAdvices();
     }
 
     /**
      * @return void
      */
-    protected function parseAspects()
+    protected function parseAdvices()
     {
         if(preg_match_all(self::REGEXP, $this->rawBlock, $matches) && count($matches) === 2) {
             foreach($matches[1] as $rawAspect) {
-                $this->aspects[] = new Aspect($rawAspect);
+                $this->advices[] = new Advice($rawAspect, $this);
             }
 
-            $this->isAspect = true;
+            $this->isAdvice = true;
         }
     }
 
     /**
      * @return bool
      */
-    public function isAspect()
+    public function isAdvice()
     {
-        return $this->isAspect;
+        return $this->isAdvice;
     }
 
     /**
@@ -118,8 +118,8 @@ class Block
     /**
      * @return array
      */
-    public function getAspects()
+    public function getAdvices()
     {
-        return $this->aspects;
+        return $this->advices;
     }
-} 
+}

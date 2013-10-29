@@ -9,34 +9,38 @@ class DocBlockTest
 {
     /**
      * @param string $text
-     * @return $this
+     * @return string
      */
-    protected function doThings($text)
+    public function doThings($text)
     {
-        echo "Text things is ", $text, "\n";
-        return $this;
+        echo "Do text things is ", $text, "\n";
+        return 'blablashow';
     }
 
     /**
      * @param string $text
-     * @return $this
+     * @return string
      */
-    protected function doAnotherThings($text)
+    public function doAnotherThings($text)
     {
-        echo "Text another things is ", $text, "\n";
-        return $this;
+        echo "Do text another things is ", $text, "\n";
+        return 'blablashow';
     }
 
     /**
-     * Test DocBlock parser
-     *
-     * @AOP/before (DocBlockTest.doAnotherThings   )
+     * @param \AOPHP\DocBlock\Advice $advice
      * @param array $parameters
-     * @AOP/after (  DocBlockTest .* )
+     * @param null|mixed $result
+     *
+     * @AOP/before(DocBlockTest . doThings)
+     * @AOP/before(* . doAnotherThings)
+     * @AOP/after(DocBlockTest . *)
      */
-    protected function testBlockAfter(array $parameters)
+    public function testBlockAfter(\AOPHP\DocBlock\Advice $advice, array & $parameters, $result = null)
     {
-
+        echo "Calling advice: ", $advice->getRawAspect(), "\n";
+        echo "Called using: ", var_export($parameters, true), "\n";
+        echo "Target Result: ", var_export($result, true), "\n";
     }
 
     // Some example of method without docBlock

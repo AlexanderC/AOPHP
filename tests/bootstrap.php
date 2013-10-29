@@ -7,7 +7,12 @@
 
 require __DIR__ . '/../autoload.php';
 
-$aophp = new \AOPHP\AOPHP();
+$AOPHP = \AOPHP\AOPHP::crete();
 
-$parser = new \AOPHP\DocBlock\Parser(new \AOPHP\Cache\FileSystemDriver());
-$parser->parse(new DocBlockTest());
+$object = new DocBlockTest();
+
+$AOPHP->addTarget($AOPHP->createTarget($object));
+$AOPHP->addAspect($AOPHP->createAspect(clone $object));
+
+//$AOPHP->advice($object, 'doThings', ['"Lorem Ipsum dolor sit amet"']);
+$AOPHP->advice($object, 'doAnotherThings', ['"Lorem Ipsum dolor sit amet"']);

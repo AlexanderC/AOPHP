@@ -55,7 +55,7 @@ class Parser
         $docBlock = $method->getDocComment();
 
         if(false !== $docBlock) {
-            $signature = md5((string) $method);
+            $signature = $this->generateSignature($method);
 
             $block = $this->cache->get($method->getDeclaringClass()->getName(), $method->getName());
 
@@ -73,6 +73,15 @@ class Parser
         }
 
         return false;
+    }
+
+    /**
+     * @param string $string
+     * @return string
+     */
+    protected function generateSignature($string)
+    {
+        return md5((string) $string);
     }
 
     /**
